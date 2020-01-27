@@ -30,19 +30,118 @@ body {
     font-size: 14px;
     color: #353535;
     text-decoration: none;
+    cursor: pointer;
   }
 
   .profile_pic {
       border-radius: 50%;
   }
 
+  .big_search_wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 75vh;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .search_form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .google_search_bar {
+    width: 600px;
+    padding: 20px;
+    border-radius: 40px;
+    padding-left: 50px;
+    font-size: 18px;
+  }
+
+  .relative_div {
+    position: relative;
+    margin: 20px;
+  }
+
+  .search_icon {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    right: auto;
+    bottom: auto;
+    width: 15px;
+    height: 15px;
+  }
+
+  .google_btn {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ebebeb;
+    color: #494949;
+    cursor: pointer;
+  }
+
+  .google_btn:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #adadad;
+    box-shadow: 1px 1px 3px 0 #b4aeae;
+  }
+
   .country_box {
     background-color: #f2f2f2;
-    font-size: 18px;
     color: #343642;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 10px;
     border-style: solid;
     border-width: 1px 0px 1px 0px;
     border-color: gray;
   }
+
+  .country_box.p {
+    padding: 10px;
+  }
+
+  .navbar_wrap.footer {
+    background-color: #f2f2f2;
+  }
+
+  .fixed_bottom{
+    position: fixed;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+  }
+
+  input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
